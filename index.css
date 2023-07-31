@@ -1,0 +1,29 @@
+body {
+    background-color: #ffbf6b;
+    animation: bg-color 10s infinite;
+  }
+  @keyframes bg-color {
+    0% { background-color: #ff9100; }
+    25% { background-color: #ff9100; }
+    50% { background-color: #ffaa00; }
+    75% { background-color: #ff7b00; }
+    100% { background-color: #ff9100; }
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.bounce {
+    animation: bounce 2s infinite;
+}
+ 
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.10;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="">
+    <header id="header">
+        <!-- navbar -->
+        <nav class="flex justify- text-white z-10 drop-shadow-xl border-white border-b-2 bg-opacity-10  bg-black
+        ">
+            <div class="absolute px-4 lg:px-8 xl:px-12 py-6 flex w-full justify-between items-center">
+                <div class="flex items-center ml-8 lg:ml-0">
+                    <img class="w-14 mr-4" src="./assets/logo.png" alt="logo">
+                    <a class=" text-2xl font-medium font-heading text-center" href="#header"> Hi, I'm Thomas</a>
+                </div>
+                <!-- Nav Links -->
+                <ul class="hidden lg:flex px-4 justify-self-end font-semibold font-heading space-x-12">
+                    <li><a class="hover:text-gray-200" href="#">About me</a></li>
+                    <li><a class="hover:text-gray-200" href="#">Skills</a></li>
+                    <li><a class="hover:text-gray-200" href="#">Projects</a></li>
+                    <li><a class="hover:text-gray-200" href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <a id="burger" class="navbar-burger self-center mr-12 sm:flex lg:hidden xl:hidden md:flex" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </a>
+        </nav>
+        <div id="menu_mobile"
+            class="hidden lg:hidden font-semibold font-heading py-8 space-x-12 bg-black text-white border-white border-b-2">
+            <ul class="flex justify-around">
+                <!-- Contenu du menu mobile -->
+                <li><a class="hover:text-gray-200" href="#">About me</a></li>
+                <li><a class="hover:text-gray-200" href="#">Skills</a></li>
+                <li><a class="hover:text-gray-200" href="#">Projects</a></li>
+                <li><a class="hover:text-gray-200" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="welcome_aboutme" class="mt-44 md:mt-64 mb-28 md:mb-52">
+        <!-- Welcome -->
+        <p
+            class="bounce text-white xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl text-5xl md:ml-28 mx-12 font-extrabold mb-36 lg:mb-72">
+            Welcome to my <br> portfolio</p>
+
+        <!-- About me -->
+        <div class="flex flex-wrap items-center justify-evenly drop-shadow-xl lg:mx-24 gap-x-24">
+
+            <img class="mx-32 w-6/12 md:w-4/12 mb-24 lg:m-0 lg:w-[20%] rounded-full drop-shadow-xl border-white border-2"
+                src="./assets/pp.jpg" alt="pp">
+
+            <div
+                class=" p-8 flex flex-col items-center border-white border-2 rounded-3xl rounded-bl-none rounded-tr-none text-white w-8/12 bg-opacity-10  bg-black">
+                <h1 class="font-bold text-3xl">About me</h1>
+                <p class="mt-8 text-center ">Passionate about art and music, I am currently undergoing training at
+                    Konexio to become a web developer.
+                    My journey has also led me to study statistics in the past.
+                    I am actively seeking an apprenticeship to further develop my skills and gain professional
+                    experience.</p>
+                <form action="assets/CV_MIOTTO_Thomas.pdf">
+                    <button type="submit" class="btn-secondary mt-9 py-2 px-4 border rounded-full">Download CV</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="mb-28 md:mb-52">
+        <div class="flex flex-col w-8/12 lg:w-6/12 rounded-3xl rounded-bl-none rounded-tr-none mx-auto drop-shadow-xl">
+
+            <h1 class="font-bold text-3xl text-white pb-16 mx-auto">Skills</h1>
+
+            <div class="mb-1 text-lg font-medium text-white">CSS (Tailwind and Bootstrap)</div>
+            <div class="h-6 bg-white rounded-full  mb-4">
+                <div class="h-6 bg-indigo-500 rounded-full " style="width: 80%"></div>
+            </div>
+            <div class="mb-1 text-lg font-medium text-white">JavaScript</div>
+            <div class="h-6 bg-white rounded-full  mb-4">
+                <div class="h-6 bg-indigo-500 rounded-full " style="width: 65%"></div>
+            </div>
+            <div class="mb-1 text-lg font-medium text-white">ReactJS</div>
+            <div class="h-6 bg-white rounded-full  mb-4">
+                <div class="h-6 bg-indigo-500 rounded-full " style="width: 50%"></div>
+            </div>
+            <div class="mb-1 text-lg font-medium text-white">PHP</div>
+            <div class="h-6 bg-white rounded-full  mb-4">
+                <div class="h-6 bg-indigo-500 rounded-full " style="width: 40%"></div>
+            </div>
+            <div class="mb-1 text-lg font-medium text-white">Symfony</div>
+            <div class="h-6 bg-white rounded-full  mb-4">
+                <div class="h-6 bg-indigo-500 rounded-full " style="width: 40%"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="mb-28 md:mb-52 flex flex-col items-center ">
+        <h1 class="font-bold text-3xl text-white pb-24 ">Projects</h1>
+
+        <div class="flex flex-wrap gap-16 rounded-3xl mx-16 lg:mx-32 drop-shadow-xl">
+
+            <div class="max-w-sm overflow-hidden shadow-lg m-auto border-2 border-white rounded-xl ">
+                <img class="w-full border-white border-b-2" src="./assets/quote_proverb.PNG" alt="quote_proverb">
+                <div class="px-6 py-4   bg-opacity-10  bg-black">
+                    <div class="font-bold text-white text-xl mb-2">Quote or proberb ?</div>
+                    <p class="text-white text-base">
+                        The user chooses to display a quote or a proverb, and they can also add new ones to the list.
+                        Additionally, there is a favorites system.
+                    </p>
+                    <div class="pt-4">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-sm overflow-hidden shadow-lg m-auto border-2 border-white rounded-xl ">
+                <img class="w-full border-b-2 border-white" src="./assets/Movie_App.PNG" alt="MovieApp">
+                <div class="px-6 py-4  bg-opacity-10  bg-black ">
+                    <div class="font-bold text-white text-xl mb-2">Movie App</div>
+                    <p class="text-white text-base">
+                        An app made with the TDBM API where users can select multiple filters and categories.
+                        Users can view movie details and add them to their favorites.
+                    </p>
+                    <div class="pt-4">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">API</span>
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">ReactJS</span>
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-sm overflow-hidden shadow-lg m-auto border-2 border-white rounded-xl ">
+                <img class="w-full border-white border-b-2" src="./assets/Spoon_App.PNG" alt="The Spoon">
+                <div class="px-6 py-4  bg-opacity-10  bg-black">
+                    <div class="font-bold text-white text-xl mb-2">The Spoon</div>
+                    <p class="text-white text-base">
+                        An app displaying a list of restaurants with a favorites system.
+                        <br>A page with restaurant details is also available.
+                    </p>
+                    <div class="pt-4">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">ReactJS</span>
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-sm overflow-hidden shadow-lg m-auto border-2 border-white rounded-xl ">
+                <img class="w-full border-white border-b-2" src="./assets/portfolio.PNG" alt="The Spoon">
+                <div class="px-6 py-4 bg-opacity-10  bg-black">
+                    <div class="font-bold text-white text-xl mb-2">Portfolio</div>
+                    <p class="text-white text-base">
+                        The latest version of my portfolio made with TailwindCSS.<br>(WIP)
+                    </p>
+                    <div class="pt-4">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">TailwindCSS</span>
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Contacts -->
+    <section id="contact" class="flex flex-col items-center mb-28 md:mb-52">
+        <h1 class="font-bold text-3xl text-white pb-24 ">Contacts</h1>
+        <div class="flex justify-evenly">
+            <a href="https://www.linkedin.com/in/thomas-miotto/"><img
+                    class="w-3/12 border-4 border-white p-4 rounded-2xl mx-auto" src="./assets/linkedin-512.png"
+                    alt="linkedin"></a>
+            <a href="mailto:thomasmiotto2@gmail.com"><img class="w-3/12 border-4 border-white p-4 rounded-2xl mx-auto"
+                    src="./assets/mail-512.png" alt="mail"></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-opacity-10  bg-black shadow">
+        <div class="w-full max-w-screen-xl mx-auto text-center p-4 md:py-8">
+            <span class="block text-sm text-white sm:text-center">© 2023 Thomas Miotto. All Rights
+                Reserved.</span>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
